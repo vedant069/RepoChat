@@ -19,7 +19,7 @@ CORS(app)
 # Store repository contents
 repo_contents = {}
 
-OLLAMA_URL = 'https://d828-34-87-187-203.ngrok-free.app/'
+OLLAMA_URL = 'https://33c8-34-143-242-75.ngrok-free.app'
 # Create directory for storing repository text files
 REPO_FILES_DIR = 'repository_files'
 if not os.path.exists(REPO_FILES_DIR):
