@@ -4,7 +4,7 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Github, LogOut, Plus, Moon, Sun, Search, Code, MessagesSquare, User, Settings } from 'lucide-react';
-import { ChatWindow } from '../components/ChatWindow2';
+import { ChatWindow } from '../components/ChatWindow';
 import { NewChatModal } from '../components/NewChatModal';
 import { SearchModal } from '../components/SearchModal';
 import { CodePreview } from '../components/CodePreview';

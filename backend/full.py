@@ -8,10 +8,13 @@ import logging
 import httpx
 import ollama
 from datetime import datetime
+from dotenv import load_dotenv 
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -19,7 +22,7 @@ CORS(app)
 # Store repository contents
 repo_contents = {}
 
-OLLAMA_URL = 'https://33c8-34-143-242-75.ngrok-free.app'
+OLLAMA_URL = os.getenv('OLLAMA_URL')
 # Create directory for storing repository text files
 REPO_FILES_DIR = 'repository_files'
 if not os.path.exists(REPO_FILES_DIR):
