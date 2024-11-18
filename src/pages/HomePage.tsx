@@ -9,7 +9,7 @@ const StarField = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    let animationFrameId;
+    let animationFrameId: number;
     
     // Set canvas size with device pixel ratio support
     const setCanvasSize = () => {

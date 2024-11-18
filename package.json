@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "devl": "concurrently \"vite\" \"cd backend && source ./venv/bin/activate && python full.py \"",
-    "dev": "concurrently \"vite\" \"cd backend && .\\venv\\Scripts\\activate && python full.py \"",
-    "start-backend": "cd backend && .\\venv\\Scripts\\activate && python full.py",
+    "dev": "concurrently \"vite\" \"cd backend && .\\venv\\Scripts\\activate && python app.py \"",
+    "start-backend": "cd backend && .\\venv\\Scripts\\activate && python app.py",
     "start-frontend": "vite",
     "build": "vite build",
     "lint": "eslint .",

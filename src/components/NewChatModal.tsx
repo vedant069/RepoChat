@@ -11,8 +11,7 @@ interface NewChatModalProps {
 export function NewChatModal({
   isOpen,
   onClose,
-  onSubmit,
-  isParentLoading
+  onSubmit
 }: NewChatModalProps) {
   const [url, setUrl] = useState('');
   const [token, setToken] = useState('');

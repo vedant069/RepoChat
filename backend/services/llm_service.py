@@ -3,12 +3,14 @@ import logging
 from typing import List, Dict
 from services.file_processor import FileInfo
 import os
+from dotenv import load_dotenv
+
 
 logger = logging.getLogger(__name__)
-
+load_dotenv("../.env")
 class LLMService:
-    def __init__(self):
-        self.OLLAMA_URL = os.getenv('OLLAMA_URL')
+    def _init_(self):
+        self.OLLAMA_URL = os.getenv("OLLAMA_URL")
         self.ollama_client = ollama.Client(host=self.OLLAMA_URL)
         self.metadata_cache = {}
 
